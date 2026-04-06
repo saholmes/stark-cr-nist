@@ -1,0 +1,340 @@
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.44
+   Compiling autocfg v1.5.0
+   Compiling libc v0.2.182
+   Compiling zerocopy v0.8.40
+   Compiling cfg-if v1.0.4
+   Compiling version_check v0.9.5
+   Compiling typenum v1.19.0
+   Compiling either v1.15.0
+   Compiling crossbeam-utils v0.8.21
+   Compiling syn v1.0.109
+   Compiling paste v1.0.15
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling rayon-core v1.13.0
+   Compiling num-integer v0.1.46
+   Compiling num-bigint v0.4.6
+   Compiling crossbeam-epoch v0.9.18
+   Compiling syn v2.0.117
+   Compiling crossbeam-deque v0.8.6
+   Compiling ahash v0.8.12
+   Compiling serde_core v1.0.228
+   Compiling once_cell v1.21.3
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling itertools v0.10.5
+   Compiling serde v1.0.228
+   Compiling rayon v1.11.0
+   Compiling arrayvec v0.7.6
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling itertools v0.13.0
+   Compiling digest v0.10.7
+   Compiling shlex v1.3.0
+   Compiling allocator-api2 v0.2.21
+   Compiling find-msvc-tools v0.1.9
+   Compiling cc v1.2.56
+   Compiling hashbrown v0.15.5
+   Compiling ark-goldilocks v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/ark-goldilocks)
+   Compiling cpufeatures v0.2.17
+   Compiling arrayref v0.3.9
+   Compiling constant_time_eq v0.4.2
+   Compiling keccak v0.1.6
+   Compiling zmij v1.0.21
+   Compiling sha3 v0.10.8
+warning: ark-goldilocks@0.1.0: Selected INV for -1 convention: 18446744069414584319
+   Compiling serde_json v1.0.149
+   Compiling itoa v1.0.17
+   Compiling memchr v2.8.0
+   Compiling regex-syntax v0.8.10
+   Compiling anstyle v1.0.13
+   Compiling plotters-backend v0.3.7
+   Compiling blake3 v1.8.3
+   Compiling ciborium-io v0.2.2
+   Compiling clap_lex v1.0.0
+   Compiling cast v0.3.0
+   Compiling same-file v1.0.6
+   Compiling clap_builder v4.5.60
+   Compiling plotters-svg v0.3.7
+   Compiling hex v0.4.3
+   Compiling plotters v0.3.7
+   Compiling criterion-plot v0.5.0
+   Compiling walkdir v2.5.0
+   Compiling serde_bytes v0.11.19
+   Compiling regex-automata v0.4.14
+   Compiling zerocopy-derive v0.8.40
+   Compiling zeroize_derive v1.4.3
+   Compiling ark-serialize-derive v0.4.2
+   Compiling ark-ff-asm v0.4.2
+   Compiling derivative v2.2.0
+   Compiling ark-ff-macros v0.4.2
+   Compiling zeroize v1.8.2
+   Compiling enum-ordinalize-derive v4.3.2
+   Compiling serde_derive v1.0.228
+   Compiling ark-serialize-derive v0.5.0
+   Compiling enum-ordinalize v4.3.2
+   Compiling ark-ff-asm v0.5.0
+   Compiling ark-ff-macros v0.5.0
+   Compiling educe v0.6.0
+   Compiling regex v1.12.3
+   Compiling clap v4.5.60
+   Compiling is-terminal v0.4.17
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling hash v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/hash)
+   Compiling tinytemplate v1.2.1
+   Compiling bincode v1.3.3
+warning: unused import: `Digest64`
+ --> crates/hash/src/sha3_impl.rs:2:47
+  |
+2 | use crate::digest_types::{Digest32, Digest48, Digest64};
+  |                                               ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `sha3::Digest`
+ --> crates/hash/src/selected.rs:6:5
+  |
+6 | use sha3::Digest;   // re-export the trait so callers can do Digest::update
+  |     ^^^^^^^^^^^^
+
+warning: `hash` (lib) generated 2 warnings (run `cargo fix --lib -p hash` to apply 2 suggestions)
+   Compiling ppv-lite86 v0.2.21
+   Compiling half v2.7.1
+   Compiling hashbrown v0.13.2
+   Compiling rand_chacha v0.3.1
+   Compiling ciborium-ll v0.2.2
+   Compiling rand v0.8.5
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.5.1
+   Compiling ark-std v0.4.0
+   Compiling ark-std v0.5.0
+   Compiling ark-serialize v0.4.2
+   Compiling ark-serialize v0.5.0
+   Compiling ark-ff v0.4.2
+   Compiling ark-ff v0.5.0
+   Compiling ark-poly v0.4.2
+   Compiling ark-poly v0.5.0
+   Compiling ark-ec v0.4.2
+   Compiling ark-ec v0.5.0
+   Compiling ark-bls12-381 v0.4.0
+   Compiling ark-pallas v0.5.0
+   Compiling field v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/field)
+   Compiling utils v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/utils)
+   Compiling poseidon v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/poseidon)
+   Compiling merkle v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/merkle)
+   Compiling transcript v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/transcript)
+   Compiling commitment v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/commitment)
+   Compiling deep_ali v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/deep_ali)
+warning: unused imports: `Field`, `One`, and `Zero`
+  --> crates/deep_ali/src/octic_ext.rs:16:14
+   |
+16 | use ark_ff::{Zero, One, Field};
+   |              ^^^^  ^^^  ^^^^^
+   |
+   = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `UniformRand`
+  --> crates/deep_ali/src/air_workloads.rs:16:32
+   |
+16 | use ark_ff::{Field, Zero, One, UniformRand};
+   |                                ^^^^^^^^^^^
+
+warning: unused imports: `SeedableRng` and `rngs::StdRng`
+  --> crates/deep_ali/src/air_workloads.rs:18:12
+   |
+18 | use rand::{rngs::StdRng, SeedableRng};
+   |            ^^^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `rayon::prelude`
+  --> crates/deep_ali/src/lib.rs:22:5
+   |
+22 | use rayon::prelude::*;
+   |     ^^^^^^^^^^^^^^
+
+warning: value assigned to `cur_size` is never read
+    --> crates/deep_ali/src/fri.rs:1242:9
+     |
+1242 |         cur_size = n_final;
+     |         ^^^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+     = note: `#[warn(unused_assignments)]` on by default
+
+   Compiling channel v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/channel)
+warning: `deep_ali` (lib) generated 5 warnings (run `cargo fix --lib -p deep_ali` to apply 3 suggestions)
+    Finished `bench` profile [optimized] target(s) in 17.06s
+     Running benches/multi_air_end_to_end.rs (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/target/release/deps/multi_air_end_to_end-7bf452ee34f2722f)
+Gnuplot not found, using plotters backend
+[RAYON CHECK] current_num_threads = 16
+csv,air_type,air_w,air_constraints,label,k,schedule,proof_bytes,prove_s,verify_ms,prove_elems_per_s,delta_size_pct,delta_prove_pct,delta_verify_pct,delta_throughput_pct
+
+╔══════════════════════════════════════════════════╗
+║  AIR: fib_w2_d2             w=2    constraints=1    ║
+╚══════════════════════════════════════════════════╝
+
+[PRESET] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] configs=10
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,16,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],1170664,0.467133,6.685,140294.116760,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=16 prove=0.47s verify=6.68ms proof=1170664 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=0.64s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,17,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],1325984,0.919142,7.268,142602.576996,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=17 prove=0.92s verify=7.27ms proof=1325984 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=1.26s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,18,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4],1401280,1.829532,7.756,143284.714371,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=18 prove=1.83s verify=7.76ms proof=1401280 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] elapsed=2.52s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,19,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8],1485056,3.676347,8.340,142611.112249,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=19 prove=3.68s verify=8.34ms proof=1485056 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] elapsed=5.07s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,20,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16],1585792,7.374777,9.288,142184.091842,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=20 prove=7.37s verify=9.29ms proof=1585792 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] elapsed=10.18s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,21,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32],1783088,14.728051,10.816,142391.685903,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=21 prove=14.73s verify=10.82ms proof=1783088 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] elapsed=20.41s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,22,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64],1985584,29.978610,12.913,139909.890442,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=22 prove=29.98s verify=12.91ms proof=1985584 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] elapsed=41.53s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,23,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128],2323760,61.929370,16.609,135454.438585,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=23 prove=61.93s verify=16.61ms proof=2323760 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] elapsed=85.74s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,24,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256],2929120,134.376597,23.556,124852.217028,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=24 prove=134.38s verify=23.56ms proof=2929120 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] elapsed=183.07s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,25,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512],3074960,421.834265,37.104,79544.112006,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=25 prove=421.83s verify=37.10ms proof=3074960 bytes  [ext=Fp8]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] elapsed=520.95s
+
+╔══════════════════════════════════════════════════╗
+║  AIR: poseidon_w16_d2       w=16   constraints=16   ║
+╚══════════════════════════════════════════════════╝
+
+[PRESET] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] configs=10
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,16,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],1170664,0.485479,8.155,134992.531670,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=16 prove=0.49s verify=8.15ms proof=1170664 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=0.68s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,17,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],1325984,0.940881,7.667,139307.746359,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=17 prove=0.94s verify=7.67ms proof=1325984 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=1.32s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,18,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4],1401280,1.853182,7.986,141456.119837,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=18 prove=1.85s verify=7.99ms proof=1401280 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] elapsed=2.61s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,19,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8],1485056,3.674467,8.643,142684.075992,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=19 prove=3.67s verify=8.64ms proof=1485056 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] elapsed=5.15s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,20,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16],1585792,7.359893,9.505,142471.644548,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=20 prove=7.36s verify=9.51ms proof=1585792 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] elapsed=10.34s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,21,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32],1783088,14.667062,10.840,142983.785147,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=21 prove=14.67s verify=10.84ms proof=1783088 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] elapsed=20.68s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,22,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64],1985584,29.264010,12.915,143326.357059,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=22 prove=29.26s verify=12.91ms proof=1985584 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] elapsed=41.45s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,23,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128],2323760,59.464926,16.667,141068.165123,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=23 prove=59.46s verify=16.67ms proof=2323760 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] elapsed=84.32s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,24,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256],2929120,135.909540,23.932,123443.990760,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=24 prove=135.91s verify=23.93ms proof=2929120 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] elapsed=186.23s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,25,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512],3074960,436.263956,38.492,76913.143011,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=25 prove=436.26s verify=38.49ms proof=3074960 bytes  [ext=Fp8]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] elapsed=537.97s
+
+╔══════════════════════════════════════════════════╗
+║  AIR: regmach_w8_d2         w=8    constraints=8    ║
+╚══════════════════════════════════════════════════╝
+
+[PRESET] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] configs=10
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,16,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],1170664,0.487784,6.856,134354.607666,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=16 prove=0.49s verify=6.86ms proof=1170664 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=0.67s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,17,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],1325984,0.941789,7.561,139173.405724,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=17 prove=0.94s verify=7.56ms proof=1325984 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=1.32s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,18,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4],1401280,1.880831,7.967,139376.659508,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=18 prove=1.88s verify=7.97ms proof=1401280 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] elapsed=2.63s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,19,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8],1485056,3.669985,8.640,142858.360924,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=19 prove=3.67s verify=8.64ms proof=1485056 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] elapsed=5.14s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,20,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16],1585792,7.332978,9.473,142994.574850,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=20 prove=7.33s verify=9.47ms proof=1585792 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] elapsed=10.30s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,21,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32],1783088,14.900472,12.373,140743.995944,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=21 prove=14.90s verify=12.37ms proof=1783088 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] elapsed=20.88s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,22,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64],1985584,29.313787,12.932,143082.981253,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=22 prove=29.31s verify=12.93ms proof=1985584 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] elapsed=41.69s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,23,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128],2323760,59.287926,16.643,141489.313771,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=23 prove=59.29s verify=16.64ms proof=2323760 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] elapsed=83.97s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,24,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256],2929120,135.097357,23.572,124186.115379,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=24 prove=135.10s verify=23.57ms proof=2929120 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] elapsed=184.91s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,25,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512],3074960,453.678938,37.806,73960.744432,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=25 prove=453.68s verify=37.81ms proof=3074960 bytes  [ext=Fp8]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] elapsed=554.31s

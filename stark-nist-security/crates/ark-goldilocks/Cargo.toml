@@ -1,0 +1,33 @@
+[package]
+name = "ark-goldilocks"
+version = "0.1.0"
+edition = "2021"
+description = "Custom Goldilocks field implementation for Arkworks"
+license = "MIT OR Apache-2.0"
+authors = ["Your Name <your.email@example.com>"]
+
+[features]
+default = ["std"]
+std = [
+    "ark-ff/std",
+    "ark-serialize/std",
+    "ark-std/std"
+]
+
+[dependencies]
+ark-ff = { version = "0.4.2", default-features = false }
+ark-serialize = { version = "0.4.2", default-features = false }
+ark-std = { version = "0.4.0", default-features = false }
+
+[dev-dependencies]
+ark-ff = { version = "0.4.2", default-features = false, features = ["std"] }
+ark-serialize = { version = "0.4.2", default-features = false, features = ["std"] }
+ark-std = { version = "0.4.0", default-features = false, features = ["std"] }
+
+[build-dependencies]
+num-bigint = "0.4"
+num-integer = "0.1"
+num-traits = "0.2"
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(std)'] }

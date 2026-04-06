@@ -1,0 +1,40 @@
+[package]
+name = "merkle"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+default = []
+serde1  = []
+parallel = [
+    "dep:rayon",
+    "ark-ff/parallel",
+    "poseidon/parallel",
+    # add any other deps that expose a `parallel` feature,
+    # e.g. "field/parallel" if your field crate has one
+]
+sha3-256    = ["hash/sha3-256"]
+sha3-384    = ["hash/sha3-384"]
+sha3-512    = ["hash/sha3-512"]
+blake3-hash = ["hash/blake3-hash"]
+
+[dependencies]
+ark-ff        = { workspace = true }
+ark-serialize = { workspace = true }
+serde         = { workspace = true, features = ["derive"] }
+field         = { path = "../field" }
+poseidon      = { path = "../poseidon" }
+ark-goldilocks = { path = "../ark-goldilocks" }
+hash = { path = "../hash" }
+sha3 = "0.10"
+
+
+rand = { workspace = true, optional = true }
+
+[dependencies.rayon]
+version  = "1.10"
+optional = true
+
+[dev-dependencies]
+bincode = "1"

@@ -1,0 +1,31 @@
+[package]
+name = "fft"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+default = []
+parallel = [
+    "dep:rayon",
+    "dep:once_cell",
+    "ark-ff/parallel",
+    "ark-poly/parallel",
+    "ark-std/parallel",
+]
+
+[dependencies]
+ark-bls12-381 = "0.4.0"
+ark-ff        = "0.4.0"
+ark-poly      = "0.4.0"
+ark-std       = "0.4.0"
+field         = { path = "../field" }
+ark-goldilocks = { path = "../ark-goldilocks" }
+
+[dependencies.rayon]
+version  = "1.10"
+optional = true
+
+[dependencies.once_cell]
+version  = "1.19"
+optional = true

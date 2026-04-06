@@ -1,0 +1,12 @@
+[package]
+name = "mle"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+ark-ff = { workspace = true }
+
+field = { path = "../field" }
+ark-pallas = "0.5"
+ark-goldilocks = { path = "../ark-goldilocks" }

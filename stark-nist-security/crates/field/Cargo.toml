@@ -1,0 +1,28 @@
+[package]
+name = "field"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+# Enable to derive Serialize/Deserialize on your own types.
+serde1 = []
+
+[dependencies]
+# Inherit versions from the workspace root. Do not set features on ark-ff.
+ark-ff = { workspace = true }
+ark-bls12-381 = { workspace = true }
+ark-goldilocks = { path = "../ark-goldilocks" }
+
+# Binary serialization for ark types
+ark-serialize = { workspace = true }
+
+# Optional serde for your own derives; gate with the "serde1" feature.
+serde = { workspace = true, optional = true, features = ["derive"] }
+
+# Utilities
+rand = { workspace = true }
+
+
+[dev-dependencies]
+criterion = { workspace = true }

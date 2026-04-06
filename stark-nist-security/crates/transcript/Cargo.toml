@@ -1,0 +1,38 @@
+[package]
+name = "transcript"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+default = []
+
+# Internal marker features
+transcript-sha3 = []
+transcript-poseidon = []
+transcript-keccak = ["dep:tiny-keccak"]
+
+# Per-variant SHA3 features (all pull in the same marker)
+sha3-256   = ["hash/sha3-256"]
+sha3-384   = ["hash/sha3-384"]
+sha3-512   = ["hash/sha3-512"]
+blake3-hash = ["hash/blake3-hash"]
+
+poseidon = ["transcript-poseidon"]
+keccak   = ["transcript-keccak"]
+blake3   = []
+
+[dependencies]
+hash = { path = "../hash", default-features = false }
+ark-ff = { workspace = true }
+ark-goldilocks = { workspace = true }
+
+poseidon = { path = "../poseidon" }
+
+sha3   = "0.10"
+blake3 = "1"
+tiny-keccak = { version = "2", optional = true, features = ["keccak"] }
+
+serde = { version = "1", features = ["derive"], optional = true }
+
+[dev-dependencies]
