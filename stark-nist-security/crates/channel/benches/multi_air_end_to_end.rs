@@ -165,13 +165,17 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
     g.measurement_time(Duration::from_secs(20));
     g.sample_size(10);
 
-    let r: usize = 87;
+    let r: usize = 56;
     let seed_z: u64 = 0xDEEF_BAAD;
     let k_lo = 11usize;
     let k_hi = 25usize;
 
     let presets: &[(&str, &[usize])] = &[
-        ("2power16", &[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]),
+          //("2power16", &[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]),
+          ("16by16by16", &[16,16,16]),
+          ("32by`6by8", &[32,16,8]),
+          ("64by32by16", &[64,32,16]),
+          ("16by2by8", &[16,16,8]),  
     ];
 
     // ✅ Which AIR workloads to benchmark
