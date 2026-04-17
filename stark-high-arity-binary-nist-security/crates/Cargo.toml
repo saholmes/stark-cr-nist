@@ -1,0 +1,17 @@
+[package]
+name = "commitment"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+ark-ff = { workspace = true }
+field = { path = "../field" }
+merkle = { path = "../merkle" }
+poseidon = { path = "../poseidon" }
+serde = { workspace = true, optional = true, features = ["derive"] }
+rayon = "1"
+
+[features]
+default = []
+serde = ["dep:serde"]

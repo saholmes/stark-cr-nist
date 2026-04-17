@@ -1,0 +1,28 @@
+[package]
+name = "poly"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+# Optional serde derives for your own types (not required for ark types).
+serde1 = []
+parallel = ["dep:rayon"]
+
+[dependencies]
+# Inherit versions from the workspace root.
+ark-ff = { workspace = true }
+ark-bls12-381 = { workspace = true }
+ark-poly = { workspace = true }
+ark-serialize = { workspace = true }
+ark-pallas = "0.5"
+ark-goldilocks = { path = "../ark-goldilocks" }
+
+# Optional serde for your types; gate with `serde1`.
+serde = { workspace = true, optional = true, features = ["derive"] }
+
+rand = { workspace = true }
+rayon = { version = "1.10", optional = true }
+
+[dev-dependencies]
+criterion = { workspace = true }

@@ -1,0 +1,17 @@
+[package]
+name = "bench"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+criterion = { workspace = true }
+field = { path = "../field" }
+fft = { path = "../fft" }
+poseidon = { path = "../poseidon" }
+merkle = { path = "../merkle" }
+rand = { workspace = true }
+
+[[bench]]
+name = "micro"
+harness = false

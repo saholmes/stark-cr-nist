@@ -1,0 +1,31 @@
+[package]
+name = "poseidon"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+default = []
+parallel = [
+    "dep:rayon",
+    "dep:once_cell",
+    "ark-ff/parallel"
+]
+
+[dependencies]
+ark-ff = { workspace = true }
+ark-bls12-381 = { workspace = true }
+utils = { path = "../utils" }
+field = { path = "../field" }
+rayon = { version = "1.10", optional = true }
+once_cell = { version = "1.19", optional = true }
+ark-goldilocks = { workspace = true }
+blake3 = "1.5"
+
+[dev-dependencies]
+criterion = "0.5"
+rand = "0.8"
+
+[[bench]]
+name = "poseidon"
+harness = false

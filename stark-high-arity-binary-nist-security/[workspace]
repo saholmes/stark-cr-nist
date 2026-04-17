@@ -1,0 +1,40 @@
+[workspace]
+members = [
+  "crates/field",
+  "crates/fft",
+  "crates/poly",
+  "crates/poseidon",
+  "crates/merkle",
+  "crates/hash",       # NEW: hash abstraction crate
+  "crates/utils",
+  "crates/bench",
+]
+
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+authors = ["Your Team"]
+license = "Apache-2.0"
+
+[workspace.dependencies]
+ark-ff = "0.4"
+ark-serialize = "0.4"
+ark-bls12-381 = "0.4"
+ark-poly = "0.4"
+ark-std = "0.4"
+blake3 = "1.5"
+sha3 = "0.10"              # NEW: NIST SHA-3 family
+digest = "0.10"            # NEW: common digest trait from RustCrypto
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bincode = "1.3"
+criterion = { version = "0.5", features = ["html_reports"] }
+
+# Workspace-level feature flags for hash selection
+[workspace.features]
+sha3-256    = ["deep_ali/sha3-256"]
+sha3-384    = ["deep_ali/sha3-384"]
+sha3-512    = ["deep_ali/sha3-512"]
+blake3-hash = ["deep_ali/blake3-hash"]

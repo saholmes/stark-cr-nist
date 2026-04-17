@@ -1,0 +1,787 @@
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.44
+   Compiling unicode-ident v1.0.24
+   Compiling autocfg v1.5.0
+   Compiling libc v0.2.182
+   Compiling cfg-if v1.0.4
+   Compiling zerocopy v0.8.40
+   Compiling version_check v0.9.5
+   Compiling typenum v1.19.0
+   Compiling either v1.15.0
+   Compiling crossbeam-utils v0.8.21
+   Compiling syn v1.0.109
+   Compiling paste v1.0.15
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling rayon-core v1.13.0
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling crossbeam-epoch v0.9.18
+   Compiling num-integer v0.1.46
+   Compiling crossbeam-deque v0.8.6
+   Compiling ahash v0.8.12
+   Compiling syn v2.0.117
+   Compiling once_cell v1.21.3
+   Compiling serde_core v1.0.228
+   Compiling num-bigint v0.4.6
+   Compiling itertools v0.10.5
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling serde v1.0.228
+   Compiling digest v0.10.7
+   Compiling rayon v1.11.0
+   Compiling arrayvec v0.7.6
+   Compiling itertools v0.13.0
+   Compiling allocator-api2 v0.2.21
+   Compiling find-msvc-tools v0.1.9
+   Compiling shlex v1.3.0
+   Compiling hashbrown v0.15.5
+   Compiling ark-goldilocks v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/ark-goldilocks)
+   Compiling cc v1.2.56
+warning: ark-goldilocks@0.1.0: Selected INV for -1 convention: 18446744069414584319
+   Compiling cpufeatures v0.2.17
+   Compiling constant_time_eq v0.4.2
+   Compiling arrayref v0.3.9
+   Compiling keccak v0.1.6
+   Compiling zmij v1.0.21
+   Compiling serde_json v1.0.149
+   Compiling itoa v1.0.17
+   Compiling sha3 v0.10.8
+   Compiling memchr v2.8.0
+   Compiling plotters-backend v0.3.7
+   Compiling ciborium-io v0.2.2
+   Compiling regex-syntax v0.8.10
+   Compiling anstyle v1.0.13
+   Compiling clap_lex v1.0.0
+   Compiling blake3 v1.8.3
+   Compiling plotters-svg v0.3.7
+   Compiling clap_builder v4.5.60
+   Compiling same-file v1.0.6
+   Compiling hex v0.4.3
+   Compiling cast v0.3.0
+   Compiling walkdir v2.5.0
+   Compiling criterion-plot v0.5.0
+   Compiling plotters v0.3.7
+   Compiling regex-automata v0.4.14
+   Compiling zerocopy-derive v0.8.40
+   Compiling zeroize_derive v1.4.3
+   Compiling serde_derive v1.0.228
+   Compiling ark-serialize-derive v0.4.2
+   Compiling ark-ff-macros v0.4.2
+   Compiling zeroize v1.8.2
+   Compiling derivative v2.2.0
+   Compiling ark-ff-asm v0.4.2
+   Compiling enum-ordinalize-derive v4.3.2
+   Compiling ark-serialize-derive v0.5.0
+   Compiling ark-ff-macros v0.5.0
+   Compiling enum-ordinalize v4.3.2
+   Compiling ark-ff-asm v0.5.0
+   Compiling educe v0.6.0
+   Compiling regex v1.12.3
+   Compiling clap v4.5.60
+   Compiling serde_bytes v0.11.19
+   Compiling is-terminal v0.4.17
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling hash v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/hash)
+warning: unused import: `Digest64`
+ --> crates/hash/src/sha3_impl.rs:2:47
+  |
+2 | use crate::digest_types::{Digest32, Digest48, Digest64};
+  |                                               ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `sha3::Digest`
+ --> crates/hash/src/selected.rs:6:5
+  |
+6 | use sha3::Digest;   // re-export the trait so callers can do Digest::update
+  |     ^^^^^^^^^^^^
+
+   Compiling tinytemplate v1.2.1
+   Compiling bincode v1.3.3
+warning: `hash` (lib) generated 2 warnings (run `cargo fix --lib -p hash` to apply 2 suggestions)
+   Compiling ppv-lite86 v0.2.21
+   Compiling half v2.7.1
+   Compiling hashbrown v0.13.2
+   Compiling rand_chacha v0.3.1
+   Compiling ciborium-ll v0.2.2
+   Compiling rand v0.8.5
+   Compiling ciborium v0.2.2
+   Compiling ark-std v0.4.0
+   Compiling ark-std v0.5.0
+   Compiling criterion v0.5.1
+   Compiling ark-serialize v0.4.2
+   Compiling ark-serialize v0.5.0
+   Compiling ark-ff v0.4.2
+   Compiling ark-ff v0.5.0
+   Compiling ark-poly v0.4.2
+   Compiling ark-poly v0.5.0
+   Compiling ark-ec v0.4.2
+   Compiling ark-ec v0.5.0
+   Compiling ark-bls12-381 v0.4.0
+   Compiling field v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/field)
+   Compiling ark-pallas v0.5.0
+   Compiling utils v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/utils)
+   Compiling poseidon v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/poseidon)
+   Compiling merkle v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/merkle)
+   Compiling transcript v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/transcript)
+   Compiling commitment v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/commitment)
+   Compiling deep_ali v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/deep_ali)
+warning: unused imports: `Field`, `One`, and `Zero`
+  --> crates/deep_ali/src/octic_ext.rs:16:14
+   |
+16 | use ark_ff::{Zero, One, Field};
+   |              ^^^^  ^^^  ^^^^^
+   |
+   = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `UniformRand`
+  --> crates/deep_ali/src/air_workloads.rs:16:32
+   |
+16 | use ark_ff::{Field, Zero, One, UniformRand};
+   |                                ^^^^^^^^^^^
+
+warning: unused imports: `SeedableRng` and `rngs::StdRng`
+  --> crates/deep_ali/src/air_workloads.rs:18:12
+   |
+18 | use rand::{rngs::StdRng, SeedableRng};
+   |            ^^^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `rayon::prelude`
+  --> crates/deep_ali/src/lib.rs:22:5
+   |
+22 | use rayon::prelude::*;
+   |     ^^^^^^^^^^^^^^
+
+warning: value assigned to `cur_size` is never read
+    --> crates/deep_ali/src/fri.rs:1242:9
+     |
+1242 |         cur_size = n_final;
+     |         ^^^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+     = note: `#[warn(unused_assignments)]` on by default
+
+   Compiling channel v0.1.0 (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/crates/channel)
+warning: `deep_ali` (lib) generated 5 warnings (run `cargo fix --lib -p deep_ali` to apply 3 suggestions)
+    Finished `bench` profile [optimized] target(s) in 20.02s
+     Running benches/multi_air_end_to_end.rs (/Volumes/SAHexternal 1/Documents/stark-cr-nist/stark-nist-security/target/release/deps/multi_air_end_to_end-7bf452ee34f2722f)
+Gnuplot not found, using plotters backend
+[RAYON CHECK] current_num_threads = 16
+csv,air_type,air_w,air_constraints,label,k,schedule,proof_bytes,prove_s,verify_ms,prove_elems_per_s,delta_size_pct,delta_prove_pct,delta_verify_pct,delta_throughput_pct
+
+╔══════════════════════════════════════════════════╗
+║  AIR: fib_w2_d2             w=2    constraints=1    ║
+╚══════════════════════════════════════════════════╝
+
+[PRESET] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] configs=10
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,16,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],356368,0.355904,1.969,184139.435114,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=16 prove=0.36s verify=1.97ms proof=356368 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=0.54s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,17,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],405072,0.706287,2.198,185579.026924,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=17 prove=0.71s verify=2.20ms proof=405072 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=1.10s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,18,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4],429360,1.407998,2.368,186182.066116,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=18 prove=1.41s verify=2.37ms proof=429360 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] elapsed=2.19s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,19,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8],456432,2.811577,2.552,186474.705181,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=19 prove=2.81s verify=2.55ms proof=456432 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] elapsed=4.37s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,20,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16],489072,5.651625,2.815,185535.310641,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=20 prove=5.65s verify=2.82ms proof=489072 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] elapsed=8.83s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,21,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32],553008,11.328390,3.157,185123.570075,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=21 prove=11.33s verify=3.16ms proof=553008 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] elapsed=17.74s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,22,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64],619056,20.801561,3.587,201634.098518,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=22 prove=20.80s verify=3.59ms proof=619056 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] elapsed=33.73s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,23,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128],729648,42.558011,4.411,197109.963621,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=23 prove=42.56s verify=4.41ms proof=729648 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] elapsed=67.44s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,24,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256],927984,94.460939,5.882,177610.091064,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=24 prove=94.46s verify=5.88ms proof=927984 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] elapsed=143.95s
+[START] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,2power16,25,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512],981936,280.451526,9.053,119644.319745,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=2power16 k=25 prove=280.45s verify=9.05ms proof=981936 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] elapsed=380.97s
+
+[PRESET] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8] configs=15
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8] k=11 (n=2048)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,11,[16,16,8],189872,0.010111,0.522,202553.339128,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=11 prove=0.01s verify=0.52ms proof=189872 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8] elapsed=0.02s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,2] k=12 (n=4096)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,12,[16,16,8,2],206032,0.015699,0.544,260910.415555,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=12 prove=0.02s verify=0.54ms proof=206032 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,2] elapsed=0.03s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,4] k=13 (n=8192)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,13,[16,16,8,4],269296,0.026955,0.672,303911.111936,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=13 prove=0.03s verify=0.67ms proof=269296 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,4] elapsed=0.05s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,8] k=14 (n=16384)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,14,[16,16,8,8],274864,0.049233,0.703,332785.765609,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=14 prove=0.05s verify=0.70ms proof=274864 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,8] elapsed=0.10s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,16] k=15 (n=32768)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,15,[16,16,8,16],295408,0.097358,0.813,336571.374280,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=15 prove=0.10s verify=0.81ms proof=295408 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,16] elapsed=0.19s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,32] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,16,[16,16,8,32],317680,0.184316,0.996,355564.076207,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=16 prove=0.18s verify=1.00ms proof=317680 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,32] elapsed=0.37s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,64] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,17,[16,16,8,64],422704,0.361482,1.579,362595.909297,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=17 prove=0.36s verify=1.58ms proof=422704 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,64] elapsed=0.74s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,128] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,18,[16,16,8,128],521200,0.726014,2.147,361073.113469,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=18 prove=0.73s verify=2.15ms proof=521200 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,128] elapsed=1.47s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,256] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,19,[16,16,8,256],698032,1.453715,3.437,360653.910842,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=19 prove=1.45s verify=3.44ms proof=698032 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,256] elapsed=2.96s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,512] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,20,[16,16,8,512],710320,2.872391,5.634,365053.354401,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=20 prove=2.87s verify=5.63ms proof=710320 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,512] elapsed=5.90s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,1024] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,21,[16,16,8,1024],804784,5.995115,10.854,349810.124950,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=21 prove=6.00s verify=10.85ms proof=804784 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,1024] elapsed=12.19s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,2048] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,22,[16,16,8,2048],853936,11.625948,19.134,360770.935436,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=22 prove=11.63s verify=19.13ms proof=853936 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,2048] elapsed=24.17s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,4096] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,23,[16,16,8,4096],952240,24.391714,38.131,343912.200220,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=23 prove=24.39s verify=38.13ms proof=952240 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,4096] elapsed=49.68s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,8192] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,24,[16,16,8,8192],1158256,55.165684,73.851,304124.137912,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=24 prove=55.17s verify=73.85ms proof=1158256 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,8192] elapsed=105.93s
+[START] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,16384] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by2by8,25,[16,16,8,16384],1611952,140.513087,149.723,238799.337031,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by2by8 k=25 prove=140.51s verify=149.72ms proof=1611952 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by2by8 schedule=[16,16,8,16384] elapsed=242.05s
+
+[PRESET] air=fib_w2_d2 label=16by3 schedule=[16,16,16] configs=14
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16] k=12 (n=4096)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,12,[16,16,16],201008,0.013157,0.561,311326.042963,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=12 prove=0.01s verify=0.56ms proof=201008 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16] elapsed=0.02s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,2] k=13 (n=8192)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,13,[16,16,16,2],288016,0.024992,0.613,327783.251724,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=13 prove=0.02s verify=0.61ms proof=288016 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,2] elapsed=0.05s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,4] k=14 (n=16384)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,14,[16,16,16,4],290800,0.047642,0.665,343900.045653,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=14 prove=0.05s verify=0.67ms proof=290800 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,4] elapsed=0.09s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,8] k=15 (n=32768)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,15,[16,16,16,8],296368,0.095111,0.720,344522.408597,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=15 prove=0.10s verify=0.72ms proof=296368 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,8] elapsed=0.18s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,16] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,16,[16,16,16,16],307504,0.179459,0.792,365186.646033,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=16 prove=0.18s verify=0.79ms proof=307504 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,16] elapsed=0.36s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,32] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,17,[16,16,16,32],410416,0.356875,1.106,367276.629668,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=17 prove=0.36s verify=1.11ms proof=410416 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,32] elapsed=0.72s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,64] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,18,[16,16,16,64],454960,0.706186,1.429,371210.940446,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=18 prove=0.71s verify=1.43ms proof=454960 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,64] elapsed=1.44s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,128] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,19,[16,16,16,128],544048,1.427360,2.282,367313.102852,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=19 prove=1.43s verify=2.28ms proof=544048 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,128] elapsed=2.90s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,256] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,20,[16,16,16,256],720880,2.837368,3.452,369559.334698,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=20 prove=2.84s verify=3.45ms proof=720880 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,256] elapsed=5.83s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,512] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,21,[16,16,16,512],813808,5.718045,7.052,366760.325574,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=21 prove=5.72s verify=7.05ms proof=813808 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,512] elapsed=11.72s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,1024] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,22,[16,16,16,1024],838384,11.443387,10.332,366526.440849,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=22 prove=11.44s verify=10.33ms proof=838384 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,1024] elapsed=23.61s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,2048] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,23,[16,16,16,2048],887536,23.489362,19.024,357123.710679,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=23 prove=23.49s verify=19.02ms proof=887536 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,2048] elapsed=48.26s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,4096] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,24,[16,16,16,4096],985840,53.973082,37.211,310844.133071,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=24 prove=53.97s verify=37.21ms proof=985840 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,4096] elapsed=104.34s
+[START] air=fib_w2_d2 label=16by3 schedule=[16,16,16,8192] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,fib_w2_d2,2,1,16by3,25,[16,16,16,8192],1263088,134.145187,75.053,250135.191908,0.00,0.00,0.00,0.00
+[DONE ] air=fib_w2_d2 label=16by3 k=25 prove=134.15s verify=75.05ms proof=1263088 bytes  [ext=Fp6]
+[ETA ] air=fib_w2_d2 label=16by3 schedule=[16,16,16,8192] elapsed=235.66s
+
+╔══════════════════════════════════════════════════╗
+║  AIR: poseidon_w16_d2       w=16   constraints=16   ║
+╚══════════════════════════════════════════════════╝
+
+[PRESET] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] configs=10
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,16,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],356368,0.336854,1.945,194553.322748,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=16 prove=0.34s verify=1.94ms proof=356368 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=0.52s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,17,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],405072,0.693546,2.196,188988.060552,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=17 prove=0.69s verify=2.20ms proof=405072 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=1.08s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,18,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4],429360,1.317358,2.355,198992.269305,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=18 prove=1.32s verify=2.35ms proof=429360 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] elapsed=2.06s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,19,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8],456432,2.680121,2.769,195621.003421,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=19 prove=2.68s verify=2.77ms proof=456432 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] elapsed=4.19s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,20,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16],489072,5.312801,2.747,197367.844627,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=20 prove=5.31s verify=2.75ms proof=489072 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] elapsed=8.33s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,21,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32],553008,10.488083,3.112,199955.703687,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=21 prove=10.49s verify=3.11ms proof=553008 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] elapsed=16.68s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,22,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64],619056,21.194564,3.590,197895.268920,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=22 prove=21.19s verify=3.59ms proof=619056 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] elapsed=33.72s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,23,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128],729648,42.426544,4.388,197720.745905,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=23 prove=42.43s verify=4.39ms proof=729648 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] elapsed=67.80s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,24,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256],927984,94.312376,5.902,177889.865889,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=24 prove=94.31s verify=5.90ms proof=927984 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] elapsed=145.72s
+[START] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,2power16,25,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512],981936,263.982751,8.985,127108.426231,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=2power16 k=25 prove=263.98s verify=8.98ms proof=981936 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] elapsed=368.17s
+
+[PRESET] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8] configs=15
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8] k=11 (n=2048)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,11,[16,16,8],189872,0.008828,0.524,232001.161818,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=11 prove=0.01s verify=0.52ms proof=189872 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8] elapsed=0.02s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,2] k=12 (n=4096)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,12,[16,16,8,2],206032,0.014455,0.529,283354.807468,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=12 prove=0.01s verify=0.53ms proof=206032 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,2] elapsed=0.03s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,4] k=13 (n=8192)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,13,[16,16,8,4],269296,0.026910,0.644,304422.147900,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=13 prove=0.03s verify=0.64ms proof=269296 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,4] elapsed=0.05s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,8] k=14 (n=16384)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,14,[16,16,8,8],274864,0.049615,0.702,330221.882944,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=14 prove=0.05s verify=0.70ms proof=274864 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,8] elapsed=0.10s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,16] k=15 (n=32768)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,15,[16,16,8,16],295408,0.096702,0.796,338854.576807,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=15 prove=0.10s verify=0.80ms proof=295408 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,16] elapsed=0.19s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,32] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,16,[16,16,8,32],317680,0.182006,0.961,360075.958357,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=16 prove=0.18s verify=0.96ms proof=317680 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,32] elapsed=0.37s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,64] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,17,[16,16,8,64],422704,0.360166,1.399,363921.291004,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=17 prove=0.36s verify=1.40ms proof=422704 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,64] elapsed=0.73s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,128] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,18,[16,16,8,128],521200,0.722172,2.321,362993.752367,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=18 prove=0.72s verify=2.32ms proof=521200 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,128] elapsed=1.47s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,256] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,19,[16,16,8,256],698032,1.438580,3.443,364448.349358,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=19 prove=1.44s verify=3.44ms proof=698032 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,256] elapsed=2.95s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,512] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,20,[16,16,8,512],710320,2.850976,5.632,367795.438991,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=20 prove=2.85s verify=5.63ms proof=710320 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,512] elapsed=5.90s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,1024] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,21,[16,16,8,1024],804784,5.694178,10.138,368297.597407,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=21 prove=5.69s verify=10.14ms proof=804784 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,1024] elapsed=11.91s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,2048] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,22,[16,16,8,2048],853936,11.744503,19.681,357129.121994,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=22 prove=11.74s verify=19.68ms proof=853936 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,2048] elapsed=24.25s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,4096] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,23,[16,16,8,4096],952240,24.161565,36.661,347188.109992,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=23 prove=24.16s verify=36.66ms proof=952240 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,4096] elapsed=50.16s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,8192] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,24,[16,16,8,8192],1158256,54.858997,74.845,305824.332751,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=24 prove=54.86s verify=74.85ms proof=1158256 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,8192] elapsed=105.98s
+[START] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,16384] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by2by8,25,[16,16,8,16384],1611952,136.785552,150.638,245306.842697,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by2by8 k=25 prove=136.79s verify=150.64ms proof=1611952 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by2by8 schedule=[16,16,8,16384] elapsed=240.14s
+
+[PRESET] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16] configs=14
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16] k=12 (n=4096)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,12,[16,16,16],201008,0.013294,0.581,308098.306828,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=12 prove=0.01s verify=0.58ms proof=201008 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16] elapsed=0.03s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,2] k=13 (n=8192)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,13,[16,16,16,2],288016,0.025135,0.628,325922.728941,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=13 prove=0.03s verify=0.63ms proof=288016 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,2] elapsed=0.05s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,4] k=14 (n=16384)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,14,[16,16,16,4],290800,0.047394,0.680,345698.380358,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=14 prove=0.05s verify=0.68ms proof=290800 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,4] elapsed=0.09s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,8] k=15 (n=32768)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,15,[16,16,16,8],296368,0.095444,0.707,343321.288764,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=15 prove=0.10s verify=0.71ms proof=296368 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,8] elapsed=0.19s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,16] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,16,[16,16,16,16],307504,0.180488,0.784,363103.466426,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=16 prove=0.18s verify=0.78ms proof=307504 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,16] elapsed=0.36s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,32] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,17,[16,16,16,32],410416,0.356250,1.104,367921.575980,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=17 prove=0.36s verify=1.10ms proof=410416 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,32] elapsed=0.72s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,64] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,18,[16,16,16,64],454960,0.714983,1.467,366643.490137,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=18 prove=0.71s verify=1.47ms proof=454960 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,64] elapsed=1.46s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,128] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,19,[16,16,16,128],544048,1.435797,2.108,365154.758385,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=19 prove=1.44s verify=2.11ms proof=544048 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,128] elapsed=2.93s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,256] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,20,[16,16,16,256],720880,2.846709,3.761,368346.806331,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=20 prove=2.85s verify=3.76ms proof=720880 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,256] elapsed=5.87s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,512] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,21,[16,16,16,512],813808,5.768752,5.793,363536.507473,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=21 prove=5.77s verify=5.79ms proof=813808 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,512] elapsed=11.99s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,1024] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,22,[16,16,16,1024],838384,11.624189,10.214,360825.506148,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=22 prove=11.62s verify=10.21ms proof=838384 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,1024] elapsed=24.13s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,2048] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,23,[16,16,16,2048],887536,23.866313,19.069,351483.198480,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=23 prove=23.87s verify=19.07ms proof=887536 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,2048] elapsed=49.77s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,4096] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,24,[16,16,16,4096],985840,53.817606,36.894,311742.145517,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=24 prove=53.82s verify=36.89ms proof=985840 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,4096] elapsed=105.35s
+[START] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,8192] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,poseidon_w16_d2,16,16,16by3,25,[16,16,16,8192],1263088,134.334421,73.721,249782.832014,0.00,0.00,0.00,0.00
+[DONE ] air=poseidon_w16_d2 label=16by3 k=25 prove=134.33s verify=73.72ms proof=1263088 bytes  [ext=Fp6]
+[ETA ] air=poseidon_w16_d2 label=16by3 schedule=[16,16,16,8192] elapsed=239.30s
+
+╔══════════════════════════════════════════════════╗
+║  AIR: regmach_w8_d2         w=8    constraints=8    ║
+╚══════════════════════════════════════════════════╝
+
+[PRESET] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] configs=10
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,16,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],356368,0.338580,1.941,193561.415899,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=16 prove=0.34s verify=1.94ms proof=356368 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=0.52s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,17,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],405072,0.658450,2.156,199061.381664,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=17 prove=0.66s verify=2.16ms proof=405072 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2] elapsed=1.03s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,18,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4],429360,1.298666,2.318,201856.385885,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=18 prove=1.30s verify=2.32ms proof=429360 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4] elapsed=2.04s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,19,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8],456432,2.588061,2.957,202579.479635,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=19 prove=2.59s verify=2.96ms proof=456432 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,8] elapsed=4.08s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,20,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16],489072,5.202383,2.744,201556.866715,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=20 prove=5.20s verify=2.74ms proof=489072 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,16] elapsed=8.21s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,21,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32],553008,10.319711,3.111,203218.089072,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=21 prove=10.32s verify=3.11ms proof=553008 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32] elapsed=16.40s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,22,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64],619056,20.728452,3.561,202345.262800,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=22 prove=20.73s verify=3.56ms proof=619056 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,64] elapsed=33.07s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,23,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128],729648,41.925930,4.408,200081.620534,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=23 prove=41.93s verify=4.41ms proof=729648 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,128] elapsed=67.07s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,24,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256],927984,93.226490,5.904,179961.896293,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=24 prove=93.23s verify=5.90ms proof=927984 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,256] elapsed=143.88s
+[START] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,2power16,25,[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512],981936,265.817129,9.291,126231.263397,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=2power16 k=25 prove=265.82s verify=9.29ms proof=981936 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=2power16 schedule=[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,512] elapsed=369.22s
+
+[PRESET] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8] configs=15
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8] k=11 (n=2048)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,11,[16,16,8],189872,0.008645,0.525,236904.518572,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=11 prove=0.01s verify=0.53ms proof=189872 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8] elapsed=0.02s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,2] k=12 (n=4096)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,12,[16,16,8,2],206032,0.017424,0.506,235083.112728,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=12 prove=0.02s verify=0.51ms proof=206032 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,2] elapsed=0.03s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,4] k=13 (n=8192)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,13,[16,16,8,4],269296,0.027074,0.684,302581.382646,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=13 prove=0.03s verify=0.68ms proof=269296 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,4] elapsed=0.05s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,8] k=14 (n=16384)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,14,[16,16,8,8],274864,0.051250,0.702,319687.549128,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=14 prove=0.05s verify=0.70ms proof=274864 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,8] elapsed=0.10s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,16] k=15 (n=32768)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,15,[16,16,8,16],295408,0.097650,0.816,335565.655318,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=15 prove=0.10s verify=0.82ms proof=295408 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,16] elapsed=0.19s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,32] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,16,[16,16,8,32],317680,0.185152,1.015,353957.509987,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=16 prove=0.19s verify=1.02ms proof=317680 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,32] elapsed=0.37s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,64] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,17,[16,16,8,64],422704,0.368810,1.459,355391.865517,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=17 prove=0.37s verify=1.46ms proof=422704 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,64] elapsed=0.75s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,128] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,18,[16,16,8,128],521200,0.741666,2.109,353452.703252,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=18 prove=0.74s verify=2.11ms proof=521200 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,128] elapsed=1.50s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,256] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,19,[16,16,8,256],698032,1.455237,9.045,360276.618102,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=19 prove=1.46s verify=9.04ms proof=698032 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,256] elapsed=2.97s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,512] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,20,[16,16,8,512],710320,2.891455,5.623,362646.430100,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=20 prove=2.89s verify=5.62ms proof=710320 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,512] elapsed=5.96s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,1024] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,21,[16,16,8,1024],804784,5.852596,10.330,358328.521998,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=21 prove=5.85s verify=10.33ms proof=804784 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,1024] elapsed=12.02s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,2048] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,22,[16,16,8,2048],853936,11.706804,19.733,358279.177188,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=22 prove=11.71s verify=19.73ms proof=853936 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,2048] elapsed=24.16s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,4096] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,23,[16,16,8,4096],952240,24.328568,37.161,344804.837189,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=23 prove=24.33s verify=37.16ms proof=952240 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,4096] elapsed=50.00s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,8192] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,24,[16,16,8,8192],1158256,57.914798,77.287,289687.895722,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=24 prove=57.91s verify=77.29ms proof=1158256 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,8192] elapsed=109.73s
+[START] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,16384] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by2by8,25,[16,16,8,16384],1611952,141.033578,150.551,237918.036866,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by2by8 k=25 prove=141.03s verify=150.55ms proof=1611952 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by2by8 schedule=[16,16,8,16384] elapsed=248.51s
+
+[PRESET] air=regmach_w8_d2 label=16by3 schedule=[16,16,16] configs=14
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16] k=12 (n=4096)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,12,[16,16,16],201008,0.013324,0.610,307405.569790,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=12 prove=0.01s verify=0.61ms proof=201008 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16] elapsed=0.03s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,2] k=13 (n=8192)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,13,[16,16,16,2],288016,0.026100,0.664,313864.717181,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=13 prove=0.03s verify=0.66ms proof=288016 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,2] elapsed=0.05s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,4] k=14 (n=16384)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,14,[16,16,16,4],290800,0.049670,0.673,329854.845145,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=14 prove=0.05s verify=0.67ms proof=290800 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,4] elapsed=0.10s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,8] k=15 (n=32768)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,15,[16,16,16,8],296368,0.093864,0.706,349101.291631,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=15 prove=0.09s verify=0.71ms proof=296368 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,8] elapsed=0.18s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,16] k=16 (n=65536)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,16,[16,16,16,16],307504,0.178846,0.799,366438.846964,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=16 prove=0.18s verify=0.80ms proof=307504 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,16] elapsed=0.36s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,32] k=17 (n=131072)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,17,[16,16,16,32],410416,0.356976,1.103,367172.886151,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=17 prove=0.36s verify=1.10ms proof=410416 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,32] elapsed=0.72s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,64] k=18 (n=262144)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,18,[16,16,16,64],454960,0.711957,1.433,368202.227343,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=18 prove=0.71s verify=1.43ms proof=454960 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,64] elapsed=1.45s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,128] k=19 (n=524288)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,19,[16,16,16,128],544048,1.414780,2.108,370579.127577,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=19 prove=1.41s verify=2.11ms proof=544048 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,128] elapsed=2.90s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,256] k=20 (n=1048576)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,20,[16,16,16,256],720880,2.843356,3.866,368781.056997,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=20 prove=2.84s verify=3.87ms proof=720880 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,256] elapsed=5.86s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,512] k=21 (n=2097152)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,21,[16,16,16,512],813808,5.714866,5.785,366964.334772,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=21 prove=5.71s verify=5.79ms proof=813808 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,512] elapsed=11.79s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,1024] k=22 (n=4194304)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,22,[16,16,16,1024],838384,11.469795,10.291,365682.548195,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=22 prove=11.47s verify=10.29ms proof=838384 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,1024] elapsed=23.78s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,2048] k=23 (n=8388608)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,23,[16,16,16,2048],887536,23.758137,19.397,353083.579685,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=23 prove=23.76s verify=19.40ms proof=887536 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,2048] elapsed=48.76s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,4096] k=24 (n=16777216)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,24,[16,16,16,4096],985840,53.713746,39.327,312344.924665,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=24 prove=53.71s verify=39.33ms proof=985840 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,4096] elapsed=104.09s
+[START] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,8192] k=25 (n=33554432)
+[DIAG] HASH_BYTES = 48
+csv,regmach_w8_d2,8,8,16by3,25,[16,16,16,8192],1263088,132.375428,74.749,253479.309262,0.00,0.00,0.00,0.00
+[DONE ] air=regmach_w8_d2 label=16by3 k=25 prove=132.38s verify=74.75ms proof=1263088 bytes  [ext=Fp6]
+[ETA ] air=regmach_w8_d2 label=16by3 schedule=[16,16,16,8192] elapsed=234.57s

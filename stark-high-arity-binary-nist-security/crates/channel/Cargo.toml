@@ -1,0 +1,60 @@
+# crates/channel/Cargo.toml
+
+[package]
+name = "channel"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+default = ["parallel", "sha3-256"]
+parallel = [
+    "deep_ali/parallel",
+    "merkle/parallel",
+    "poseidon/parallel",
+    "ark-ff/parallel",
+]
+fs_blake3 = ["transcript/blake3"]
+poseidon = ["transcript/poseidon"]
+sha3-256   = ["hash/sha3-256", "merkle/sha3-256", "transcript/sha3-256"]
+sha3-384   = ["hash/sha3-384", "merkle/sha3-384", "transcript/sha3-384"]
+sha3-512   = ["hash/sha3-512", "merkle/sha3-512", "transcript/sha3-512"]
+blake3-hash = ["hash/blake3-hash", "merkle/blake3-hash", "transcript/blake3-hash"]
+
+[dependencies]
+ark-ff = { workspace = true }
+ark-serialize = "0.4.2"
+ark-goldilocks = { path = "../ark-goldilocks" }
+
+field = { path = "../field" }
+commitment = { path = "../commitment" }
+poseidon = { path = "../poseidon" }
+transcript = { path = "../transcript", default-features = false }
+merkle = { path = "../merkle", default-features = false }
+deep_ali = { path = "../deep_ali" }
+hash = { path = "../hash", default-features = false }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+serde_bytes = "0.11"
+ark-poly.workspace = true
+
+[dev-dependencies]
+criterion = "0.5"
+rand = "0.8"
+bincode = "1.3"
+serde = { version = "1", features = ["derive"] }
+serde_bytes = "0.11"
+rayon = "1"
+
+[[bench]]
+name = "protocol"
+harness = false
+
+[[bench]]
+name = "end_to_end"
+harness = false
+
+[[bench]]
+name = "multi_air_end_to_end"
+harness = false

@@ -1,0 +1,16 @@
+[package]
+name = "commitment"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+ark-ff = { workspace = true }
+field = { path = "../field" }
+merkle = { path = "../merkle" }
+poseidon = { path = "../poseidon" }
+ark-goldilocks = { path = "../ark-goldilocks" }
+sha3 = "0.10"
+
+[dev-dependencies]
+rand = "0.8"

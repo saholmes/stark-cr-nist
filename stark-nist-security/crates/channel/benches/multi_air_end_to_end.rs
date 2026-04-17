@@ -19,9 +19,12 @@ use deep_ali::air_workloads::{AirType, build_execution_trace};
 use deep_ali::trace_import::trace_inputs_from_air;
 
 // ✅ DEEP-ALI + MF-FRI APIs
+// NOTE: deep_tower::Fp3 is no longer needed — the DEEP-ALI merge
+//       now computes the constraint quotient c = Φ̃/Z_H directly,
+//       and the FRI subsystem handles the DEEP quotient using the
+//       proper tower-field extension (Ext).
 use deep_ali::{
     deep_ali_merge_evals,
-    deep_tower::Fp3,
     fri::{
         deep_fri_prove,
         deep_fri_proof_size_bytes,
@@ -42,12 +45,12 @@ use deep_ali::{
 // ═══════════════════════════════════════════════════════════════════
 //type Ext = CubeExt<GoldilocksCubeConfig>;
 
-//use deep_ali::sextic_ext::SexticExt;
-//type Ext = SexticExt;
+use deep_ali::sextic_ext::SexticExt;
+type Ext = SexticExt;
 
-use deep_ali::octic_ext::OcticExt;
+//use deep_ali::octic_ext::OcticExt;
 
-type Ext = OcticExt;  // Fp⁶ = Fp³[u]/(u² − α)
+//type Ext = OcticExt;  // Fp⁶ = Fp³[u]/(u² − α)
 
 // ═══════════════════════════════════════════════════════════════════
 //  CSV record  (extended with AIR type)
@@ -154,6 +157,9 @@ fn normalize_fri_schedule(n0: usize, mut schedule: Vec<usize>) -> Vec<usize> {
 //  Main benchmark: AIR × schedule × domain size
 // ═══════════════════════════════════════════════════════════════════
 
+/// Blowup factor (rate inverse) used for all workloads.
+const BLOWUP: usize = 4;
+
 fn bench_e2e_mf_fri(c: &mut Criterion) {
     eprintln!(
         "[RAYON CHECK] current_num_threads = {}",
@@ -165,17 +171,17 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
     g.measurement_time(Duration::from_secs(20));
     g.sample_size(10);
 
-    let r: usize = 56;
+    let r: usize = 52;
     let seed_z: u64 = 0xDEEF_BAAD;
     let k_lo = 11usize;
-    let k_hi = 25usize;
+    let k_hi = 24usize;
 
     let presets: &[(&str, &[usize])] = &[
-          //("2power16", &[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]),
-          ("16by16by16", &[16,16,16]),
-          ("32by`6by8", &[32,16,8]),
-          ("64by32by16", &[64,32,16]),
-          ("16by2by8", &[16,16,8]),  
+          ("2power16", &[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]),
+          //("16by16by16", &[16,16,16]),
+          //("32by16by8", &[32,16,8]),
+          //("64by32by16", &[64,32,16]),
+          //("16by2by8", &[16,16,8]),
     ];
 
     // ✅ Which AIR workloads to benchmark
@@ -239,17 +245,17 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
                 // ─────────────────────────────────────────────
                 // ✅ AIR-PARAMETERISED TRACE GENERATION
                 // ─────────────────────────────────────────────
+                let n_trace = n0 / BLOWUP;
+
                 let trace = match air {
                     AirType::Fibonacci => {
                         // Existing path — guaranteed compatible
-                        real_trace_inputs(n0, 4)
+                        real_trace_inputs(n0, BLOWUP)
                     }
                     _ => {
                         // New path — generalised
-                            let n_trace = n0 / 4;
-                            let trace_cols = build_execution_trace(air, n_trace);
-                            trace_inputs_from_air(trace_cols, n0, 4)
-
+                        let trace_cols = build_execution_trace(air, n_trace);
+                        trace_inputs_from_air(trace_cols, n0, BLOWUP)
                     }
                 };
 
@@ -260,23 +266,30 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
 
                 let domain0 = FriDomain::new_radix2(n0);
 
-                // ✅ Sample DEEP-ALI challenge z ∈ Fp³
-                let z_fp3 = Fp3 {
-                    a0: F::rand(&mut rng),
-                    a1: F::rand(&mut rng),
-                    a2: F::rand(&mut rng),
-                };
-
-                // ✅ DEEP-ALI merge
-                let (f0_ali, _z_used, _c_star) =
-                    deep_ali_merge_evals(
-                        &a_eval,
-                        &s_eval,
-                        &e_eval,
-                        &t_eval,
-                        domain0.omega,
-                        z_fp3,
-                    );
+                // ─────────────────────────────────────────────
+                // ✅ FIX: compute constraint quotient c = Φ̃/Z_H
+                //
+                //  OLD (buggy):
+                //    let z_fp3 = Fp3 { a0: ..., a1: ..., a2: ... };
+                //    let (f0_ali, _, _) = deep_ali_merge_evals(
+                //        ..., domain0.omega, z_fp3);
+                //
+                //  Bug 1: computed Φ̃(ω^j)/(ω^j − z) without subtracting Φ̃(z)
+                //  Bug 2: IFFT+truncate forced low degree, nullifying FRI
+                //  Bug 3: projected Fp³ eval onto base field
+                //
+                //  NEW (correct):
+                //    Pass n_trace so the function divides by Z_H properly.
+                //    The DEEP quotient is handled inside FRI (fri.rs).
+                // ─────────────────────────────────────────────
+                let f0_ali = deep_ali_merge_evals(
+                    &a_eval,
+                    &s_eval,
+                    &e_eval,
+                    &t_eval,
+                    domain0.omega,
+                    n_trace,
+                );
 
                 let params = DeepFriParams {
                     schedule: normalized_schedule.clone(),
