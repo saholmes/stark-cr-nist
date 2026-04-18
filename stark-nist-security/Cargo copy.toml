@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "crates/field",
+    "crates/utils",
+    "crates/fft",
+    "crates/poly",
+    "crates/poseidon",
+    "crates/hash",
+    "crates/merkle",
+    "crates/bench",
+    "crates/transcript",
+    "crates/mle",
+    "crates/commitment",
+    "crates/channel",
+    "crates/deep_ali",
+    "crates/ark-goldilocks",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+authors = ["Your Name <you@example.com>"]
+
+[workspace.dependencies]
+ark-ff = { version = "0.4.2" }
+ark-bls12-381 = "0.4.0"
+ark-serialize = "0.4.2"
+ark-poly = "0.4.2"
+blake3 = "1"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+criterion = "0.5"
+ark-goldilocks = { path = "./crates/ark-goldilocks", version = "0.1.0" }
+sha3 = "0.10"
+digest = "0.10"

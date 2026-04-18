@@ -11,18 +11,11 @@ use std::fs::File;
 use std::io::{BufWriter, Write};
 use std::time::{Duration, Instant};
 
-// ✅ Existing imports
 use deep_ali::trace_import::real_trace_inputs;
 
-// ✅ NEW: multi-AIR trace generation
 use deep_ali::air_workloads::{AirType, build_execution_trace};
 use deep_ali::trace_import::trace_inputs_from_air;
 
-// ✅ DEEP-ALI + MF-FRI APIs
-// NOTE: deep_tower::Fp3 is no longer needed — the DEEP-ALI merge
-//       now computes the constraint quotient c = Φ̃/Z_H directly,
-//       and the FRI subsystem handles the DEEP quotient using the
-//       proper tower-field extension (Ext).
 use deep_ali::{
     deep_ali_merge_evals,
     fri::{
@@ -34,26 +27,18 @@ use deep_ali::{
     },
 };
 
-// ═══════════════════════════════════════════════════════════════════
-// Extension‑field selector.  Change this ONE line to switch:
-//
-//   Fp³ (cubic, default):   type Ext = CubeExt<GoldilocksCubeConfig>;
-//   Fp  (base field only):  type Ext = F;
-//
-// To add Fp⁴ you would need to implement a quartic extension struct
-// and implement TowerField for it — not yet available in this crate.
-// ═══════════════════════════════════════════════════════════════════
-//type Ext = CubeExt<GoldilocksCubeConfig>;
+// Choose between Sextic and Optic
 
 use deep_ali::sextic_ext::SexticExt;
+
 type Ext = SexticExt;
 
 //use deep_ali::octic_ext::OcticExt;
 
-//type Ext = OcticExt;  // Fp⁶ = Fp³[u]/(u² − α)
+//type Ext = OcticExt;
 
 // ═══════════════════════════════════════════════════════════════════
-//  CSV record  (extended with AIR type)
+//  CSV record
 // ═══════════════════════════════════════════════════════════════════
 
 #[derive(Default, Clone)]
@@ -103,7 +88,7 @@ impl CsvRow {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-//  Schedule helpers  (unchanged)
+//  Schedule helpers
 // ═══════════════════════════════════════════════════════════════════
 
 fn schedule_str(s: &[usize]) -> String {
@@ -154,11 +139,8 @@ fn normalize_fri_schedule(n0: usize, mut schedule: Vec<usize>) -> Vec<usize> {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-//  Main benchmark: AIR × schedule × domain size
+//  Main benchmark
 // ═══════════════════════════════════════════════════════════════════
-
-/// Blowup factor (rate inverse) used for all workloads.
-const BLOWUP: usize = 4;
 
 fn bench_e2e_mf_fri(c: &mut Criterion) {
     eprintln!(
@@ -171,20 +153,20 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
     g.measurement_time(Duration::from_secs(20));
     g.sample_size(10);
 
-    let r: usize = 52;
+// L1 = 54
+// L3 = 79
+// L5 = 105
+    let r: usize = 54;
     let seed_z: u64 = 0xDEEF_BAAD;
     let k_lo = 11usize;
     let k_hi = 24usize;
 
+    let blowup: usize = 32;
+
     let presets: &[(&str, &[usize])] = &[
-          ("2power16", &[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]),
-          //("16by16by16", &[16,16,16]),
-          //("32by16by8", &[32,16,8]),
-          //("64by32by16", &[64,32,16]),
-          //("16by2by8", &[16,16,8]),
+        ("2power16", &[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]),
     ];
 
-    // ✅ Which AIR workloads to benchmark
     let air_types = AirType::all();
 
     let file = File::create("benchmarkdata.csv").unwrap();
@@ -195,7 +177,6 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
     let mut paper_baseline: HashMap<(String, usize), CsvRow> = HashMap::new();
     let mut rng_seed = 1337u64;
 
-    // ✅ Outer loop: AIR workloads
     for &air in air_types {
         eprintln!(
             "\n╔══════════════════════════════════════════════════╗"
@@ -225,37 +206,32 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
                 let run_start = Instant::now();
 
                 let n0 = 1usize << k;
+                let n_trace = n0 / blowup;
                 g.throughput(Throughput::Elements(n0 as u64));
 
                 let normalized_schedule =
                     normalize_fri_schedule(n0, schedule.to_vec());
 
                 eprintln!(
-                    "[START] air={} label={} schedule={} k={} (n={})",
+                    "[START] air={} label={} schedule={} k={} (n={}, n_trace={})",
                     air.label(),
                     label,
                     schedule_str(&normalized_schedule),
                     k,
-                    n0
+                    n0,
+                    n_trace,
                 );
 
                 rng_seed = rng_seed.wrapping_mul(1103515245).wrapping_add(12345);
-                let mut rng = StdRng::seed_from_u64(rng_seed);
-
-                // ─────────────────────────────────────────────
-                // ✅ AIR-PARAMETERISED TRACE GENERATION
-                // ─────────────────────────────────────────────
-                let n_trace = n0 / BLOWUP;
+                let mut _rng = StdRng::seed_from_u64(rng_seed);
 
                 let trace = match air {
                     AirType::Fibonacci => {
-                        // Existing path — guaranteed compatible
-                        real_trace_inputs(n0, BLOWUP)
+                        real_trace_inputs(n0, blowup)
                     }
                     _ => {
-                        // New path — generalised
                         let trace_cols = build_execution_trace(air, n_trace);
-                        trace_inputs_from_air(trace_cols, n0, BLOWUP)
+                        trace_inputs_from_air(trace_cols, n0, blowup)
                     }
                 };
 
@@ -266,22 +242,7 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
 
                 let domain0 = FriDomain::new_radix2(n0);
 
-                // ─────────────────────────────────────────────
-                // ✅ FIX: compute constraint quotient c = Φ̃/Z_H
-                //
-                //  OLD (buggy):
-                //    let z_fp3 = Fp3 { a0: ..., a1: ..., a2: ... };
-                //    let (f0_ali, _, _) = deep_ali_merge_evals(
-                //        ..., domain0.omega, z_fp3);
-                //
-                //  Bug 1: computed Φ̃(ω^j)/(ω^j − z) without subtracting Φ̃(z)
-                //  Bug 2: IFFT+truncate forced low degree, nullifying FRI
-                //  Bug 3: projected Fp³ eval onto base field
-                //
-                //  NEW (correct):
-                //    Pass n_trace so the function divides by Z_H properly.
-                //    The DEEP quotient is handled inside FRI (fri.rs).
-                // ─────────────────────────────────────────────
+                // DEEP-ALI merge: compute Q(X) = Φ̃(X) / Z_H(X)
                 let f0_ali = deep_ali_merge_evals(
                     &a_eval,
                     &s_eval,
@@ -291,12 +252,19 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
                     n_trace,
                 );
 
+                // ◀◀◀ THE FIX: deep_quotient: true activates Equation 1
+                //
+                // Before: Q(X) was fed directly to FRI.
+                // Now:    fri_build_transcript samples z, computes Q(z),
+                //         then builds C(X) = [Q(X)−Q(z)]/(X−z) and
+                //         feeds C to FRI layer 0.
                 let params = DeepFriParams {
                     schedule: normalized_schedule.clone(),
                     r,
                     seed_z,
                     coeff_commit_final: true,
                     d_final: 1,
+                    deep_quotient: true,          // ◀ EQUATION 1 ENABLED
                 };
 
                 // ──────────── Prove ────────────
@@ -328,7 +296,6 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
                     delta_throughput_pct: 0.0,
                 };
 
-                // ✅ Baseline keyed on (air_label, k)
                 let baseline_key = (air.label().to_string(), k);
                 if label == "paper" {
                     paper_baseline.insert(baseline_key, row.clone());
@@ -354,7 +321,7 @@ fn bench_e2e_mf_fri(c: &mut Criterion) {
                 writer.flush().unwrap();
 
                 eprintln!(
-                    "[DONE ] air={} label={} k={} prove={:.2}s verify={:.2}ms proof={} bytes  [ext=Fp{}]",
+                    "[DONE ] air={} label={} k={} prove={:.2}s verify={:.2}ms proof={} bytes  [ext=Fp{}]  [DEEP=ON]",
                     air.label(),
                     label,
                     k,
